@@ -7,6 +7,9 @@ p.innerHTML = `0${dataHora}:0${dataMinuto}:0${dataSegundo}`
 
 let timer = 0;
 function btnCmc(){
+  setTimeout(function(){
+    p.setAttribute('class', 'normal')
+  }, 1 )
   timer = setInterval(function(){
     dataSegundo++
     
